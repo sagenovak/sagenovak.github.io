@@ -73,7 +73,7 @@ main {
 
 /* interests section styles */
 #interests {
-  border: 4px rgb(239, 105, 105) ridge;
+  border: 4px rgb(239, 105, 105) solid;
   padding: 8px;
   margin-top: 20px;
 }

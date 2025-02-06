@@ -50,6 +50,7 @@ main {
   display: flex;
   margin-top: 20px;
   border-radius: 10px;
+  
 }
 
 .sidebar {
@@ -77,7 +78,7 @@ main {
 #interests {
   border: 4px rgb(239, 105, 105) solid;
   padding: 8px;
-  margin-top: 20px;
+  margin-top: 10px;
   border-radius: 10px;
 }
 
@@ -92,6 +93,11 @@ h3 {
 #portfolio {
   list-style-type: none;
   padding-left: 0;
+}
+
+iframe {
+width: 100px;
+height: 200px;
 }
 
 #portfolio li {

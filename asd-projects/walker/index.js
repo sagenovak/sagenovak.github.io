@@ -108,8 +108,8 @@ function repositionGameItem() {
   console.log("position :", walker.x, walker.y);
 }
 function redrawGameItem() {
-  $("walker").css("left", walker.x);
-  $("walker").css("top", walker.y);
+  $("#walker").css("left", walker.x);
+  $("#walker").css("top", walker.y);
   console.log("Walker position:", walker.x, walker.y);
 }
 function wallCollision() {

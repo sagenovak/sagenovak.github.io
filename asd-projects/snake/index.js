@@ -117,7 +117,7 @@ function moveSnake() {
     column/row properties. 
   */
 
-  for (var i = snake.body.length; i >= 1; i--) {
+  for (var i = snake.body.length - 1; i >= 1; i--) {
     var currentSnakeSquare = snake.body[i];
     var snakeSquareInFront = snake.body[i - 1];
 
@@ -211,7 +211,7 @@ function hasCollidedWithSnake() {
     HINT: Each part of the snake's body is stored in the snake.body Array. The
     head and each part of the snake's body also knows its own row and column.
   */
-  for (i = 1 ; i <= snake.body.length; i++) {
+  for (i = 1 ; i < snake.body.length; i++) {
     if (snake.body[i].row === snake.head.row && snake.head.column === snake.body[i].column) {
       return true;
     } 
@@ -339,7 +339,7 @@ function getRandomAvailablePosition() {
   while (!spaceIsAvailable) {
     randomPosition.column = Math.floor(Math.random() * COLUMNS);
     randomPosition.row = Math.floor(Math.random() * ROWS);
-    for (i = 0; i <= snake.body.length; i++) {
+    for (i = 0; i < snake.body.length; i++) {
       if (randomPosition.column === snake.body[i].column && randomPosition.row === snake.body[i].row) {
         spaceIsAvailable = false;
       }
